@@ -26,3 +26,7 @@
     break-inside: avoid;
     margin-bottom: 20px;
 }
+
+#container_AboutUs h2 {
+    margin-top: 15px;
+}

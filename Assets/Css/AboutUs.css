@@ -17,7 +17,12 @@
 }
 
 #container_AboutUs #container_AboutUs_values {
-    display: flex;
-    gap: 20px;
+    column-width: 280px;
+    column-gap: 40px;
     margin-top: 20px;
+}
+
+#container_AboutUs_values>* {
+    break-inside: avoid;
+    margin-bottom: 20px;
 }

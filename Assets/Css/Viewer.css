@@ -1,0 +1,70 @@
+/* star Visor */
+/* ===== VISOR ===== */
+
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.viewer img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px black;
+    animation: zoom .25s ease;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(.7);
+        opacity: .5;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.viewer.hidden {
+    display: none;
+}
+
+#viewer-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* efecto hover galería */
+.product-img {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}
+
+.clients-img {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.clients-img:hover {
+    transform: scale(1.05);
+}
+
+/* end visor */

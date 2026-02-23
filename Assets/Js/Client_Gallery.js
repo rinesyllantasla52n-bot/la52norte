@@ -11,6 +11,11 @@ function initClientGallery() {
         img.src = basePath + imgName;
         img.classList.add("clients-img");
 
+        // 👇 ABRIR VISOR
+        img.addEventListener("click", () => {
+            openViewer(img.src);
+        });
+
         contenedor.appendChild(img);
     });
 }

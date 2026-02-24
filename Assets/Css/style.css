@@ -11,20 +11,43 @@ body {
 }
 
 #header_up {
+    background-image: url("/Assets/icons/header_up.png");
+    background-size: cover;
     position: relative;
     padding: 15px;
     margin: auto;
     border-radius: 15px;
-    background: rgba(133, 199, 57, 0.555);
+    /* background: rgba(133, 199, 57, 0.555); */
     /* background: linear-gradient(135deg, #cddb06, #9bca18, #d0d317); */
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
 }
 
 #header_up h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #000000;
     font-size: 2.5em;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: end;
     font-size: 70px;
+    -webkit-text-stroke: 2px #000000;
+    text-shadow:
+        1px 1px 0 #bfbfbf,
+        2px 2px 0 #b5b5b5,
+        3px 3px 0 #ababab,
+        4px 4px 0 #a1a1a1,
+        5px 5px 0 #979797,
+        6px 6px 0 #8d8d8d,
+        7px 7px 0 #838383,
+        8px 8px 0 #797979,
+        9px 9px 0 #6f6f6f,
+        10px 10px 10px rgba(0, 0, 0, .25);
+
 }
 
 #header {
@@ -34,7 +57,6 @@ body {
     background: rgba(255, 255, 255, 0.267);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-
     box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
     border-radius: 15px;
     margin-top: 15px;

@@ -32,10 +32,10 @@
     <div id="header">
         <header>
             <nav>
-                <a href="#" onclick="cargar('pages/AboutUs.html')">Inicio</a>
-                <a href="#" onclick="cargar('./pages/Services.html')">Servicios</a>
-                <a href="#" onclick="cargar('./pages/Products.html')">Productos</a>
-                <a href="#" onclick="cargar('./pages/OurClients.html')">Clientes</a>
+                <a href="#" onclick="setActiveLink(this); cargar('pages/AboutUs.html')">Inicio</a>
+                <a href="#" class="active" onclick="setActiveLink(this); cargar('./pages/Services.html')">Servicios</a>
+                <a href="#" onclick="setActiveLink(this); cargar('./pages/Products.html')">Productos</a>
+                <a href="#" onclick="setActiveLink(this); cargar('./pages/OurClients.html')">Clientes</a>
                 <!-- <a href="#" onclick="cargar('./pages/Contact.html')">Contacto</a> -->
             </nav>
         </header>
@@ -96,6 +96,7 @@
     <script src="Assets/Js/Client_Gallery.js"></script>
     <script src="Assets/Js/Services.js"></script>
     <script src="Assets/Js/ImageViewer.js"></script>
+    <script src="Assets/Js/setActiveLink.js"></script>
     <script src="Assets/Js/script.js"></script>
 
 

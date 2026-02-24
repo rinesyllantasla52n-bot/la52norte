@@ -52,7 +52,7 @@ body {
     top: 10px;
     position: sticky;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.267);
+    background: rgba(255, 255, 255, 0.068);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
@@ -63,6 +63,9 @@ body {
 
 
 #header nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -72,6 +75,18 @@ body {
     text-decoration: none;
     color: #000;
     padding: 10px;
+}
+
+#header nav a:hover {
+    background: rgba(172, 145, 145, 0.829);
+    color: white;
+    border-radius: 8px;
+}
+
+#header nav a.active {
+    background: rgba(172, 145, 145, 0.829);
+    color: white;
+    border-radius: 8px;
 }
 
 #header_up {
@@ -94,11 +109,10 @@ body {
 
 #footer {
     position: relative;
-    padding: 15px;
+    padding: 3px;
     margin: auto;
     border-radius: 15px;
-    background: rgba(133, 199, 57, 0.555);
-    /* background: linear-gradient(135deg, #cddb06, #9bca18, #d0d317); */
+    background-image: url("../icons/footer.png");
 }
 
 
@@ -116,5 +130,13 @@ body {
 
 #footer footer a i,
 span {
+    font-size: 20px;
+    color: #6ceb23;
     margin-right: 6px;
+}
+
+footer a:hover {
+    background: rgba(172, 145, 145, 0.829);
+    color: white;
+    border-radius: 8px;
 }

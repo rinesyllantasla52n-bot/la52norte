@@ -17,8 +17,6 @@ body {
     padding: 15px;
     margin: auto;
     border-radius: 15px;
-    /* background: rgba(133, 199, 57, 0.555); */
-    /* background: linear-gradient(135deg, #cddb06, #9bca18, #d0d317); */
     display: grid;
     grid-template-columns: 4fr 1fr;
     align-items: center;

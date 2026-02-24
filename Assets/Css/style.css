@@ -11,7 +11,7 @@ body {
 }
 
 #header_up {
-    background-image: url("/Assets/icons/header_up.png");
+    background-image: url("../icons/header_up.png");
     background-size: cover;
     position: relative;
     padding: 15px;

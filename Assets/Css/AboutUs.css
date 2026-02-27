@@ -1,0 +1,32 @@
+* {
+    text-align: justify;
+}
+
+#container_AboutUs {
+    display: flex;
+    flex-direction: column;
+}
+
+#container_AboutUs #aboutUs {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 20px 15px 15px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#container_AboutUs #container_AboutUs_values {
+    column-width: 280px;
+    column-gap: 40px;
+    margin-top: 20px;
+}
+
+#container_AboutUs_values>* {
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+#container_AboutUs h2 {
+    margin-top: 15px;
+}

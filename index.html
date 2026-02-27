@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/Css/style.css">
+    <link rel="stylesheet" href="Assets/Css/Viewer.css">
+    <link rel="stylesheet" href="Assets/Css/AboutUs.css">
+    <link rel="stylesheet" href="Assets/Css/Products.css">
+    <link rel="stylesheet" href="Assets/Css/ClientUs.css">
+    <link rel="stylesheet" href="Assets/Css/Services.css">
+    <link rel="stylesheet" href="Assets/Css/responsive.css">
+
+    <title>Rines y llantas | la 52 Norte</title>
+
+    <!-- ICONO -->
+    <link rel="icon" href="Assets/Icons/la_52_pestaña.png" type="image/png">
+
+    <script defer src="https://kit.fontawesome.com/4df96501a3.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div id="header_up">
+        <h1>Rines & llantas</h1>
+        <img src="Assets/icons/logo52.png" alt="logo">
+    </div>
+
+    <!-- start header -->
+    <div id="header">
+        <button id="menu-toggle">☰</button>
+        <header>
+            <nav>
+                <a href="#" onclick="setActiveLink(this); cargar('pages/AboutUs.html')">Inicio</a>
+                <a href="#" class="active" onclick="setActiveLink(this); cargar('./pages/Services.html')">Servicios</a>
+                <a href="#" onclick="setActiveLink(this); cargar('./pages/Products.html')">Productos</a>
+                <a href="#" onclick="setActiveLink(this); cargar('./pages/OurClients.html')">Clientes</a>
+                <!-- <a href="#" onclick="cargar('./pages/Contact.html')">Contacto</a> -->
+            </nav>
+        </header>
+    </div>
+    <!-- end header -->
+
+    <!-- start container -->
+    <div id="container">
+    </div>
+    <!-- end container -->
+
+    <!-- start footer -->
+    <div id="footer">
+        <footer>
+            <a href="https://maps.app.goo.gl/m5sXiDngrxnbDHUh6" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-map"></i>
+                <span>
+                    Visitanos
+                </span>
+            </a>
+            <a href="tel:+573008919753" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    Teléfono
+                </span>
+            </a>
+            <a href="mailto:rinesyllantasla52n@gmail.com?subject=Cotizar%20servicios%20y%2Fo%20productos&body=Necesito%20informaci%C3%B3n%20de%20sus%20servicios%20y%20valores"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    Email
+                </span>
+            </a>
+            <a href="https://wa.me/573008919753?text=Hola%21%20deseo%20información%20sobre%20sus%20productos%20y%20servicios"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>
+                    Whatsapp
+                </span>
+            </a>
+        </footer>
+    </div>
+    <!-- end footer -->
+
+    <!-- star visor -->
+    <!-- VISOR GLOBAL -->
+    <div id="image-viewer" class="viewer hidden">
+        <span id="viewer-close">&times;</span>
+        <img id="viewer-img" src="" title="imagen">
+    </div>
+    <!-- end visor -->
+
+    <script defer src="Assets/Js/mobileMenu.js"></script>
+    <script defer src="Assets/Js/Product_Gallery_Data.js"></script>
+    <script defer src="Assets/Js/Client_Gallery_Data.js"></script>
+    <script defer src="Assets/Js/Services_Data.js"></script>
+    <script defer src="Assets/Js/Products_Galery.js"></script>
+    <script defer src="Assets/Js/Client_Gallery.js"></script>
+    <script defer src="Assets/Js/Services.js"></script>
+    <script defer src="Assets/Js/ImageViewer.js"></script>
+    <script defer src="Assets/Js/setActiveLink.js"></script>
+    <script defer src="Assets/Js/script.js"></script>
+
+
+</body>
+
+</html>

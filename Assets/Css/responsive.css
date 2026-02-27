@@ -1,0 +1,224 @@
+/* =====================================================
+RESPONSIVE DESIGN
+RINES Y LLANTAS LA 52 NORTE
+SOLO ADAPTACIONES — NO ESTILOS BASE
+===================================================== */
+
+
+/* =====================================================
+1200px - LAPTOPS PEQUEÑOS
+===================================================== */
+@media (max-width:1200px) {
+    #container {
+        padding: 15px;
+    }
+}
+
+
+/* =====================================================
+992px - TABLETS HORIZONTALES
+===================================================== */
+@media (max-width:992px) {
+
+    #header_up h1 {
+        font-size: 26px;
+    }
+
+    #header_up img {
+        width: 140px;
+    }
+
+    nav a {
+        font-size: 15px;
+        padding: 8px 14px;
+    }
+}
+
+
+/* =====================================================
+768px - TABLETS VERTICALES
+===================================================== */
+@media (max-width:768px) {
+
+    #header_up {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
+
+    #header_up img {
+        width: 120px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 6px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    #footer footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #footer a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/* =====================================================
+480px - CELULARES
+===================================================== */
+@media (max-width:480px) {
+
+    /* eliminar padding global problemático */
+    * {
+        padding: 0 !important;
+    }
+
+    body {
+        padding: 6px;
+    }
+
+    /* ================= HEADER SUPERIOR ================= */
+
+    #header_up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 8px;
+        gap: 6px;
+        text-align: center;
+    }
+
+    #header_up h1 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 1.1;
+        -webkit-text-stroke: 1px #000;
+    }
+
+    #header_up img {
+        width: 100px;
+        height: auto;
+    }
+
+    /* ================= HEADER MENU ================= */
+
+    #header {
+        margin: 10px 0;
+        padding: 8px;
+        border-radius: 14px;
+        position: sticky;
+        top: 0;
+        z-index: 1500;
+    }
+
+    #header nav a {
+        width: 100%;
+        text-align: center;
+        padding: 14px 10px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+
+    /* ================= CONTENIDO ================= */
+
+    #container {
+        height: auto;
+        min-height: calc(100vh - 210px);
+        margin-bottom: 70px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2000;
+    }
+
+    #footer footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 6px 2px;
+    }
+
+    #footer footer a {
+        flex-direction: column;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    #footer footer i {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    #footer footer span {
+        font-size: 10px;
+        margin: 0;
+    }
+}
+
+
+/* =====================================================
+360px - CELULARES PEQUEÑOS
+===================================================== */
+@media (max-width:360px) {
+
+    /* ACTIVAR HAMBURGUESA SOLO AQUI */
+    #menu-toggle {
+        display: block;
+        width: 100%;
+        font-size: 26px;
+        background: rgba(172, 145, 145, .6);
+        border: none;
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 10px;
+        color: white;
+        cursor: pointer;
+
+        text-align: center;
+    }
+
+    /* OCULTAR NAV */
+    #header nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    /* CUANDO SE ABRE */
+    #header nav.open {
+        display: flex;
+    }
+
+    #header nav a {
+        font-size: 13px;
+        padding: 12px 6px;
+    }
+
+    #header_up h1 {
+        font-size: 18px;
+    }
+
+    #footer span {
+        font-size: 9px;
+    }
+}

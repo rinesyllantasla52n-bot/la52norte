@@ -1,13 +1,12 @@
-/* star Visor */
 /* ===== VISOR ===== */
-
 .viewer {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .85);
+    background: rgba(245, 245, 245, 0.95);
+    /* ✅ fondo claro para transparencias */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +17,18 @@
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
-    box-shadow: 0 0 25px black;
-    animation: zoom .25s ease;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    /* ✅ mantiene toda la imagen visible */
+    background-color: #f5f5f5;
+    /* fondo para transparencias dentro del visor */
+    animation: zoom 0.25s ease;
 }
 
 @keyframes zoom {
     from {
-        transform: scale(.7);
-        opacity: .5;
+        transform: scale(0.7);
+        opacity: 0.5;
     }
 
     to {
@@ -43,28 +46,61 @@
     top: 20px;
     right: 40px;
     font-size: 45px;
-    color: white;
+    color: black;
+    /* ✅ contraste con fondo claro */
     cursor: pointer;
     font-weight: bold;
 }
 
-/* efecto hover galería */
+/* ===== EFECTO HOVER GALERÍAS ===== */
+.product-img,
+.client-img {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.product-img:hover,
+.client-img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== WRAPPERS PARA CLIENTES ===== */
+.client-wrapper {
+    background-color: #f5f5f5;
+    /* fondo uniforme para transparencias */
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-img {
+    width: 100%;
+    height: 140px;
+    /* tamaño ajustado */
+    object-fit: contain;
+    /* mantiene proporción completa */
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    /* refuerzo de fondo para transparencias */
+}
+
+/* ===== WRAPPERS PARA PRODUCTOS (opcional) ===== */
+.product-wrapper {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .product-img {
-    cursor: pointer;
-    transition: .2s;
+    width: 100%;
+    height: 160px;
+    /* ajusta según prefieras */
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: #f5f5f5;
 }
-
-.product-img:hover {
-    transform: scale(1.05);
-}
-
-.clients-img {
-    cursor: pointer;
-    transition: .2s;
-}
-
-.clients-img:hover {
-    transform: scale(1.05);
-}
-
-/* end visor */

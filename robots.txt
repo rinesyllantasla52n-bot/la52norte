@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tusitio.github.io/sitemap.xml
+Sitemap: https://rinesyllantasla52n-bot.github.io/la52norte/sitemap.xml

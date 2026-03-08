@@ -123,7 +123,9 @@ body {
     padding: 3px;
     margin: auto;
     border-radius: 15px;
-    background-image: url("../icons/footer.png");
+    background-color: #7c7979;
+    opacity: 14;
+    /* background-image: url("../icons/footer.png"); */
 }
 
 
@@ -142,7 +144,7 @@ body {
 #footer footer a i,
 span {
     font-size: 20px;
-    color: #6ceb23;
+    color: white;
     margin-right: 6px;
 }
 
